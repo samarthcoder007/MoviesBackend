@@ -35,14 +35,14 @@ export function Movie(){
         }
     }
     
-    const post = async (plr) => {
+    const post = async (mov) => {
         try{
        const res = await axios.post("http://localhost:3004/movie/",{
-            name: plr.name,
-            yearOfRelease: plr.yearOfRelease,
-            genre: plr.genre,
-            leadMaleActor: plr.leadMaleActor,
-            leadFemaleActor: plr.leadFemaleActor
+            name: mov.name,
+            yearOfRelease: mov.yearOfRelease,
+            genre: mov.genre,
+            leadMaleActor: mov.leadMaleActor,
+            leadFemaleActor: mov.leadFemaleActor
         })
         setMyData(currentmyData => {
             return [...currentmyData,res.data]
