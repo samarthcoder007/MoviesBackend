@@ -9,7 +9,7 @@ export function Movie(){
 
     const getmoviesAll = async () => {
         try{
-        const res = await axios.get("http://localhost:3004/movie/")
+        const res = await axios.get("https://moviesapi-hs5b.onrender.com/movie/")
         setMyData(res.data)
         }catch(err){
             alert(Object.values(err.response.data) + ".");
@@ -18,7 +18,7 @@ export function Movie(){
     
     const getmoviesOne = async (name) => {
         try{
-        const res = await axios.get(`http://localhost:3004/movie/${name}`)
+        const res = await axios.get(`https://moviesapi-hs5b.onrender.com/movie/${name}`)
         setMyData([res.data])
         }catch(err){
             alert(Object.values(err.response.data) + ".");
@@ -27,7 +27,7 @@ export function Movie(){
 
     const patchMovie = async (mov) => {
         try{
-        const res = await axios.patch(`http://localhost:3004/movie/${mov.name}`, {
+        const res = await axios.patch(`https://moviesapi-hs5b.onrender.com/movie/${mov.name}`, {
             name: mov.name,
             yearOfRelease: mov.yearOfRelease,
             genre: mov.genre,
@@ -43,7 +43,7 @@ export function Movie(){
     
     const deletemovie = async (name) => {
         try{
-        const res = await axios.delete(`http://localhost:3004/movie/${name}`)
+        const res = await axios.delete(`https://moviesapi-hs5b.onrender.com/movie/${name}`)
         setMyData(currentmyData => {
             return currentmyData.filter(movie => movie.name !== res.data.name)
         })
@@ -54,7 +54,7 @@ export function Movie(){
     
     const post = async (mov) => {
         try{
-       const res = await axios.post("http://localhost:3004/movie",{
+       const res = await axios.post("https://moviesapi-hs5b.onrender.com/movie",{
             name: mov.name,
             yearOfRelease: mov.yearOfRelease,
             genre: mov.genre,
