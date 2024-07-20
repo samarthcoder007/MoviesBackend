@@ -19,6 +19,12 @@ html{
   font-family: 'font1', sans-serif;
   font-size: 2.5rem;
 }
+#usage {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-family: 'font1', sans-serif;
+  font-size: 1rem;
+}
 .superCard{
   font-family: 'font2', sans-serif;
   display: flex;
