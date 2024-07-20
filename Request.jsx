@@ -38,7 +38,6 @@ export function Request({post,deletemovie,getmoviesOne,getmoviesAll}){
       <option value="post">POST</option>
       <option value="delete">DELETE</option>
       <option value="patch">PATCH</option>
-      <option value="put">PUT</option>
     </select>
   </div>
   <input type="text" id="query"/>
