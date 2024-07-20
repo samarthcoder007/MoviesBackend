@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Request } from "./Request.jsx"
 import axios from "axios"
+import React from "react"
 import "./index.css"
 
 export function Movie(){
