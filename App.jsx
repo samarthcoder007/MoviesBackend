@@ -1,4 +1,5 @@
 import {Movie} from "./Movie.jsx"
+import React from "react"
 
 export default function App(){
 
