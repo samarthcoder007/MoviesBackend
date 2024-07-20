@@ -1,4 +1,6 @@
 import "./Request.css"
+import React from "react"
+
 export function Request({post,deletemovie,getmoviesOne,getmoviesAll}){
 
     function val() {
